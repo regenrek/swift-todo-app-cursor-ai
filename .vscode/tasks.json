@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-scheme",
+                "todoapp", // Replace with your Xcode scheme name
+                "-workspace",
+                "todoapp.xcworkspace", // Replace with your Xcode workspace name
+                "-configuration",
+                "Debug" // Or "Release" as needed
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build Xcode project"
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "xcrun",
+            "args": [
+                "simctl",
+                "launch",
+                "booted",
+                "com.macherjek.todoapp" // Replace with your app's bundle identifier
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Run Xcode project"
+        },
+        {
+            "label": "Sync Xcode Project",
+            "type": "shell",
+            "command": "ruby",
+            "args": [
+                "sync_xcodeproj.rb"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
