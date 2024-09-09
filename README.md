@@ -17,7 +17,7 @@ project_path = File.join(Dir.pwd, 'todoapp2.xcodeproj')
 ```
 
 ```
-    next if item == '.' || item == '..' || item == 'todoapp2.xcodeproj'
+next if item == '.' || item == '..' || item == 'todoapp2.xcodeproj'
 ```
 
 ## Sync to XCode
