@@ -1,4 +1,4 @@
-# SwiftUI Project
+# Cursor AI + SwiftUI Sync with Xcodeproj
 
 Simple Cursor AI + XCode sync using [Xcodeproj](https://github.com/CocoaPods/Xcodeproj)
 
@@ -17,7 +17,7 @@ project_path = File.join(Dir.pwd, 'todoapp2.xcodeproj')
 ```
 
 ```
-next if item == '.' || item == '..' || item == 'todoapp2.xcodeproj'
+gitnext if item == '.' || item == '..' || item == 'todoapp2.xcodeproj'
 ```
 
 ## Sync to XCode
