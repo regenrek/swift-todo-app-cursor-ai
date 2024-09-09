@@ -1,6 +1,6 @@
 # SwiftUI Project
 
-Simple Cursor AI + XCode sync using [sync_xcodeproj.rb](https://github.com/CocoaPods/Xcodeproj)
+Simple Cursor AI + XCode sync using [Xcodeproj](https://github.com/CocoaPods/Xcodeproj)
 
 
 > **⚠️ IMPORTANT NOTICE**
