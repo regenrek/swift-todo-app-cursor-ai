@@ -1,4 +1,3 @@
-# sync_xcodeproj.rb
 require 'xcodeproj'
 
 # Define the relative path to your Xcode project
@@ -67,5 +66,4 @@ Dir.glob('*.swift').each do |swift_file|
   end
 end
 
-# Save changes to the project
 project.save
